@@ -94,33 +94,33 @@
 
 </body>
 <section>
-
-    <form class="formulario">
-    <fieldset>
-        <legend>Contactanos llenando todos los campos</legend>
-        <div clas ="contenedor-campos">
-        <div class="campo">
-            <label>Nombre</label>
-            <input class="input-text" placeholder="Tu nombre">
-        </div>
-
-        <div class="campo">
-            <label>Teléfono</label>
-            <input class="input-text" placeholder="Tu teléfono">
-        </div>
-
-        <div class="campo">
-            <label>Correo</label>
-            <input class="input-text" placeholder="Tu correo">
-        </div>
-
-        <div class="campo label">
-            <label class="label">Mensaje</label>
-            <textarea class="campo textarea"></textarea>
-        </div>
-            <button type="Submit">Enviar</button>
-        </div>
-    </fieldset>
+    <form class="formulario" style="background: var(--blanco); border-radius: 1rem; box-shadow: 0 4px 24px rgba(0,0,0,0.10); padding: 2rem; max-width: 500px; margin: 2rem auto;">
+        <fieldset style="border: none; padding: 0;">
+            <legend style="font-size: 1.3rem; color: var(--primario); font-weight: bold; margin-bottom: 1.5rem; text-align: center;">
+                Contáctanos llenando todos los campos
+            </legend>
+            <div class="contenedor-campos" style="display: flex; flex-direction: column; gap: 1.2rem;">
+                <div class="campo" style="display: flex; flex-direction: column;">
+                    <label style="margin-bottom: 0.3rem;">Nombre</label>
+                    <input class="input-text" placeholder="Tu nombre" style="padding: 0.7rem 1rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem;">
+                </div>
+                <div class="campo" style="display: flex; flex-direction: column;">
+                    <label style="margin-bottom: 0.3rem;">Teléfono</label>
+                    <input class="input-text" placeholder="Tu teléfono" style="padding: 0.7rem 1rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem;">
+                </div>
+                <div class="campo" style="display: flex; flex-direction: column;">
+                    <label style="margin-bottom: 0.3rem;">Correo</label>
+                    <input class="input-text" placeholder="Tu correo" style="padding: 0.7rem 1rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem;">
+                </div>
+                <div class="campo label" style="display: flex; flex-direction: column;">
+                    <label class="label" style="margin-bottom: 0.3rem;">Mensaje</label>
+                    <textarea class="campo textarea" rows="4" placeholder="Escribe tu mensaje aquí..." style="padding: 0.7rem 1rem; border-radius: 0.5rem; border: 1px solid #ccc; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" style="background: var(--primario); color: #fff; border: none; border-radius: 0.5rem; padding: 0.9rem 0; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.2s;">
+                    Enviar
+                </button>
+            </div>
+        </fieldset>
     </form>
 </section>
 
