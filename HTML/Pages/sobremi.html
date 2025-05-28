@@ -39,6 +39,9 @@
             border-bottom: 2px solid var(--secundario);
             width: 100%;
             padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
         }
         .lista-sobremi {
             list-style: disc inside;
@@ -51,59 +54,92 @@
         .intro-sobremi {
             margin-bottom: 2rem;
         }
+        .perfil-cv {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+        .perfil-cv img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+            border: 4px solid var(--secundario);
+            margin-bottom: 1.2rem;
+        }
+        .datos-cv {
+            text-align: center;
+            margin-bottom: 1.2rem;
+        }
+        .datos-cv h2 {
+            margin-bottom: 0.5rem;
+            color: var(--oscuro);
+        }
+        .datos-cv p {
+            color: var(--gris);
+            margin-bottom: 0.2rem;
+        }
     </style>
 </head>
 <body>
     <header class="header">
-        <h1 class="titulo">Sobre Mi</h1>
+        <h1 class="titulo">Currículum Vitae</h1>
     </header>
     <div class="nav-bg">
         <nav class="navegacion-principal contenedor">
             <a href="../index.html">Inicio</a>
             <a href="#">Sobre Mi</a>
-            <a href="contacto.html" target="_blank">Contacto</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </div>
-<main class="contenedor sombra">
-    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2.5rem;">
-        <img 
-            src="../img/perfil.jpeg" 
-            alt="Foto de Diego Sebastian Gutierrez Valenciano" 
-            style="
-                width: 300px; 
-                height: 300px; 
-                object-fit: cover; 
-                border-radius: 50%; 
-                box-shadow: 0 4px 16px rgba(0,0,0,0.12); 
-                border: 4px solid var(--secundario);
-                margin-bottom: 1.5rem;
-            ">
-        <h2 class="titulo-sobremi" style="text-align: center;">Hola, soy Diego Sebastian Gutierrez Valenciano</h2>
-        <p class="intro-sobremi" style="text-align: center;">
-            Soy Ingeniero en Sistemas Computacionales con experiencia en diseño y desarrollo de sistemas web y aplicaciones. Apasionado por la tecnología y el aprendizaje continuo.
-        </p>
-    </div>
-    <div class="grid-sobremi">
-        <section class="card-sobremi">
-            <header>
-                <h3>Estudios</h3>
-            </header>
-            <ul class="lista-sobremi">
-                <li>Ingeniería en Sistemas Computacionales - Universidad Politecnica de Aguascalientes</li>
-            </ul>
-        </section>
-        <section class="card-sobremi">
-            <header>
-                <h3>Certificaciones</h3>
-            </header>
-            <ul class="lista-sobremi">
-                <li>Certificación Scrum Fundamentals</li>
-                <li>Certificado en JavaScript Moderno</li>
-                <li>Certificado en Desarrollo de Aplicaciones Web</li>
-            </ul>
-        </section>
-    </div>
-</main>
+    <main class="contenedor sombra">
+        <div class="perfil-cv">
+            <img src="../img/perfil.jpeg" alt="Foto de Diego Sebastian Gutierrez Valenciano">
+            <div class="datos-cv">
+                <h2>Diego Sebastian Gutierrez Valenciano</h2>
+                <p><strong>Ingeniero en Sistemas Computacionales</strong></p>
+                <p>Aguascalientes, México</p>
+                <p>Email: up220628@alumnos.upa.edu.mx</p>
+                <p>Tel: +52 449 363 0756</p>
+            </div>
+            <p class="intro-sobremi">
+                Soy Ingeniero en Sistemas Computacionales con experiencia en diseño y desarrollo de sistemas web y aplicaciones. Apasionado por la tecnología y el aprendizaje continuo.
+            </p>
+        </div>
+        <div class="grid-sobremi">
+            <section class="card-sobremi">
+                <h3>
+                    <!-- Icono de estudios -->
+                    <svg width="24" height="24" fill="none" stroke="#0097A7" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 3L2 9l10 6 10-6-10-6z"/>
+                        <path d="M2 9v6c0 2 4 4 10 4s10-2 10-4V9"/>
+                    </svg>
+                    Estudios
+                </h3>
+                <ul class="lista-sobremi">
+                    <li>Ingeniería en Sistemas Computacionales - Universidad Politécnica de Aguascalientes</li>
+                    <li>Diplomado en Desarrollo Web Full Stack</li>
+                </ul>
+            </section>
+            <section class="card-sobremi">
+                <h3>
+                    <!-- Icono de certificaciones -->
+                    <svg width="24" height="24" fill="none" stroke="#FFC107" stroke-width="2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    Certificaciones
+                </h3>
+                <ul class="lista-sobremi">
+                    <li>Certificación Scrum Fundamentals</li>
+                    <li>Certificado en JavaScript Moderno</li>
+                    <li>CCNA Routing and Switching</li>
+                </ul>
+            </section>
+        </div>
+    </main>
     <footer class="footer">
         <p>Todos los derechos reservados ISC. Diego Sebastian Gutierrez Valenciano</p>
     </footer>
