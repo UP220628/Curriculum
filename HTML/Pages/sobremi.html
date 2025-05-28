@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="preload" href="../CSS/colores.css" as ="style">
+    <link rel="stylesheet" href="../CSS/colores.css">  
+    <title>Sobre Mi</title>
+    <style>
+        .grid-sobremi {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        @media (min-width: 768px) {
+            .grid-sobremi {
+                flex-direction: row;
+            }
+        }
+        .card-sobremi {
+            background: var(--blanco);
+            border-radius: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 2rem 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .card-sobremi h3 {
+            color: var(--secundario);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            border-bottom: 2px solid var(--secundario);
+            width: 100%;
+            padding-bottom: 0.5rem;
+        }
+        .lista-sobremi {
+            list-style: disc inside;
+            margin-left: 1rem;
+        }
+        .titulo-sobremi {
+            margin-bottom: 1.5rem;
+            color: var(--primario);
+        }
+        .intro-sobremi {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo">Sobre Mi</h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="../index.html">Inicio</a>
+            <a href="#">Sobre Mi</a>
+            <a href="contacto.html" target="_blank">Contacto</a>
+        </nav>
+    </div>
+<main class="contenedor sombra">
+    <div style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2.5rem;">
+        <img 
+            src="../img/perfil.jpeg" 
+            alt="Foto de Diego Sebastian Gutierrez Valenciano" 
+            style="
+                width: 300px; 
+                height: 300px; 
+                object-fit: cover; 
+                border-radius: 50%; 
+                box-shadow: 0 4px 16px rgba(0,0,0,0.12); 
+                border: 4px solid var(--secundario);
+                margin-bottom: 1.5rem;
+            ">
+        <h2 class="titulo-sobremi" style="text-align: center;">Hola, soy Diego Sebastian Gutierrez Valenciano</h2>
+        <p class="intro-sobremi" style="text-align: center;">
+            Soy Ingeniero en Sistemas Computacionales con experiencia en diseño y desarrollo de sistemas web y aplicaciones. Apasionado por la tecnología y el aprendizaje continuo.
+        </p>
+    </div>
+    <div class="grid-sobremi">
+        <section class="card-sobremi">
+            <header>
+                <h3>Estudios</h3>
+            </header>
+            <ul class="lista-sobremi">
+                <li>Ingeniería en Sistemas Computacionales - Universidad Politecnica de Aguascalientes</li>
+            </ul>
+        </section>
+        <section class="card-sobremi">
+            <header>
+                <h3>Certificaciones</h3>
+            </header>
+            <ul class="lista-sobremi">
+                <li>Certificación Scrum Fundamentals</li>
+                <li>Certificado en JavaScript Moderno</li>
+                <li>Certificado en Desarrollo de Aplicaciones Web</li>
+            </ul>
+        </section>
+    </div>
+</main>
+    <footer class="footer">
+        <p>Todos los derechos reservados ISC. Diego Sebastian Gutierrez Valenciano</p>
+    </footer>
+</body>
+</html>
